@@ -88,6 +88,7 @@ function main_form($response="") {
 
 /** Add/Edit server form.  No DB operations. */
 function edit_form() {
+    trim_post();
     $id = $_POST['edit_id'];
 
     // Validate adding a new server or editing an existing server.
@@ -151,6 +152,7 @@ function edit_form() {
 
 /** DB operation to either add or edit a form, based on $_POST['id'] */
 function db_process() {
+    trim_post();
     $id = $_POST['submit_id'];
     $name = $_POST['name'];
     $label = $_POST['label'];
