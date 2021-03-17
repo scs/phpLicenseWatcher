@@ -15,8 +15,14 @@ $cache_lifetime=7200;
 // $do_not_reply_address is filled in the reply field.
 // License alert emails are disabled when either is left blank.
 // Licenses expiring within $lead_time (in days) are included in the alerts.
-$notify_address="";
-$do_not_reply_address="";
+$send_email_notifications = true;
+$notify_address="kristoffer.nordstroem@scs.ch";
+$smtp_host = "smtprelay.scs-ad.scs.ch";
+$smtp_port = 25;
+$smtp_tls = "none";
+$reply_address="phplicensewatcher@vm-ta-web.scs-ad.scs.ch";
+# $smtp_port = ;
+$do_not_reply_address="phplicensewatcher@vm-ta-web.scs-ad.scs.ch";
 $lead_time=30;
 
 // $disable_autorefresh, when set to 1, will halt automatic refresh of certain
@@ -29,7 +35,7 @@ $collection_interval=15;
 // Docker: Please set $db_password.  Do not change other values.
 $db_hostname="mariadb";
 $db_username="lmutilmon";
-$db_password="";
+$db_password="testpassword";
 $db_database="licenses";
 
 // IMPORTANT: Change this to 0 when used in production!
