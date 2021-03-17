@@ -1,4 +1,5 @@
 -- DB Migration for supporting additional license managers.
+use licenses;
 
 ALTER TABLE `servers` CHANGE `lmgrd_version` `version` VARCHAR(15) NULL;
 ALTER TABLE `servers` ADD `license_manager` VARCHAR(25) NOT NULL AFTER `status`;
