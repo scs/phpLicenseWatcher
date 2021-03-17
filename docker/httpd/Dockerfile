@@ -35,6 +35,14 @@ RUN chmod 755 /usr/local/bin/lmutil
 # older lmutil need this
 RUN ln -sf /lib64/ld-linux-x86-64.so.2 /lib64/ld-lsb-x86-64.so.3
 
+ENV LM_LICENSE_FILE="1707@flexlm.scs-ad.scs.ch:2100@flexlm.scs-ad.scs.ch:1709@bitburger.scs.ch:1717@flexlm.scs-ad.scs.ch:1706@flexlm.scs-ad.scs.ch:1702@flexlm.scs-ad.scs.ch:27000@flexlm.scs-ad.scs.ch:1101@flexlm.scs-ad.scs.ch:5280@flexlm.scs-ad.scs.ch:1710@flexlm.scs-ad.scs.ch"
+
+ENV LM_LICENSE_FILE="1707@flexlm.scs-ad.scs.ch:2100@flexlm.scs-ad.scs.ch:1709@bitburger.scs.ch:1717@flexlm.scs-ad.scs.ch:1706@flexlm.scs-ad.scs.ch:1702@flexlm.scs-ad.scs.ch:27000@flexlm.scs-ad.scs.ch:1101@flexlm.scs-ad.scs.ch:5280@flexlm.scs-ad.scs.ch:1710@flexlm.scs-ad.scs.ch"
+
+ENV LM_LICENSE_FILE="1707@flexlm.scs-ad.scs.ch:2100@flexlm.scs-ad.scs.ch:1709@bitburger.scs.ch:1717@flexlm.scs-ad.scs.ch:1706@flexlm.scs-ad.scs.ch:1702@flexlm.scs-ad.scs.ch:27000@flexlm.scs-ad.scs.ch:1101@flexlm.scs-ad.scs.ch:5280@flexlm.scs-ad.scs.ch:1710@flexlm.scs-ad.scs.ch"
+
+ENV LM_LICENSE_FILE="1707@flexlm.scs-ad.scs.ch:2100@flexlm.scs-ad.scs.ch:1709@bitburger.scs.ch:1717@flexlm.scs-ad.scs.ch:1706@flexlm.scs-ad.scs.ch:1702@flexlm.scs-ad.scs.ch:27000@flexlm.scs-ad.scs.ch:1101@flexlm.scs-ad.scs.ch:5280@flexlm.scs-ad.scs.ch:1710@flexlm.scs-ad.scs.ch"
+
 WORKDIR /var/www/html
 RUN mkdir /app
 RUN git clone https://github.com/rpi-dotcio/phpLicenseWatcher.git /app

@@ -14,9 +14,9 @@ services:
         environment:
             TZ: "Europe/Rome"
             MYSQL_ALLOW_EMPTY_PASSWORD: "no"
-            MYSQL_ROOT_PASSWORD: ""
+            MYSQL_ROOT_PASSWORD: "rootpwd"
             MYSQL_USER: 'lmutilmon'
-            MYSQL_PASSWORD: ''
+            MYSQL_PASSWORD: 'testpassword'
             MYSQL_DATABASE: 'licenses'
         restart: always
 
